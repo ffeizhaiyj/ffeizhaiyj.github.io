@@ -1,0 +1,151 @@
+h1,h2,h3,h4,h5,h6,strong {
+	/*font-weight: bold;*/
+	font-weight: normal;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol {
+	margin: 0;
+}
+
+ul,ol {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+em {
+	/*font-style: italic;*/
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+.big-cont{
+	width:996px;
+	height: 430px;
+	border: 1px solid #DCDCDC;
+	margin: auto;
+}
+.cont{
+	width: 165px;
+	height: 430px;
+	border-right: 1px solid #dcdcdc;
+	float: left;
+}
+.mon{
+	border: none;
+}
+	.font{
+		width: 165px;
+		height: 45px;
+		border-top: 3px solid #b1d690;
+		color: #b1d690;
+		text-align: center;
+	}
+	.font1{
+		width: 165px;
+		height: 45px;
+		border-top: 3px solid #df7aaf;
+		color: #df7aaf;
+		text-align: center;
+	}
+	.font1 h3{
+		margin-top: 15px;
+	}
+	.font2{
+		width: 165px;
+		height: 45px;
+		border-top: 3px solid #a4a4a4;
+		color: #a4a4a4;
+		text-align: center;
+	}
+	.font2 h3{
+		margin-top: 15px;
+	}
+	.font3{
+		width: 165px;
+		height: 45px;
+		border-top: 3px solid #70b5cf;
+		color: #70b5cf;
+		text-align: center;
+	}
+	.font3 h3{
+		margin-top: 15px;
+	}
+	.font4{
+		width: 165px;
+		height: 45px;
+		border-top: 3px solid #e56e81;
+		color: #e56e81;
+		text-align: center;
+	}
+	.font4 h3{
+		margin-top: 15px;
+	}
+	.font5{
+		width: 165px;
+		height: 45px;
+		border-top: 3px solid #dfcc8f;
+		color: #dfcc8f;
+		text-align: center;
+	}
+	.font5 h3{
+		margin-top: 15px;
+	}
+	.font h3{
+		margin-top: 15px;
+	}
+	.box{
+			padding: 0px 10px;
+			width: 140px;
+			height: 130px;
+			/*background: darksalmon;*/
+			position: relative;
+	}
+	.box img{
+		width: 100%;
+		border: 1px solid gray;
+		height: 95px;
+	}
+	.box p{
+		font-size: 13px;
+		color: white;
+		background: rgba(0,0,0,0.5);
+		position: absolute;
+		top: 80px;
+		right: 10px;
+		padding: 0 3px;
+	}
+	.box h4{
+		font-size: 13px;
+		color: #000000;
+		background: url(../img/图标.png) no-repeat right center;
+	}
+	.box span{
+		font-size: 11px;
+		color: gray;
+	}
+.bottom{
+	width: 140px;
+	height: 40px;
+	border-top: 1px dashed gray;
+	margin-left: 10px;
+	padding-top: 15px;
+}
+	.bottom h4{
+		font-size: 13px;
+		color: #000000;
+	}
+	.bottom span{
+		font-size: 11px;
+		color: gray;
+	}
+	.bottom p{
+		font-size: 11px;
+		color: gray;
+		padding: 10px 0px;
+	}
