@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--字符编码-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--匹配最新的IE浏览器，做兼容-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1"><!--视口-->
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				margin: 30px auto;
+			}
+			.header{
+				height: 300px;
+				background: #5F2F51;
+			}
+			.header h1,.header h4{
+				text-align: center;
+				color: white;
+			}
+			.header h3{
+				text-align: center;
+				background: #337AB7;
+				color: white;
+				width:300px;
+				height: 40px;
+				margin: 0 auto;
+				line-height: 40px;
+				border-radius: 5px;
+			}
+			.header h3 a{
+				color: white;
+				text-decoration: none;
+				font-weight: normal;
+			}
+			.header h5{
+				text-align: center;
+			}
+			.header h5 a{
+				color: white;
+				text-decoration: none;
+				font-weight: normal;
+			}
+			.header h5 a:hover{
+				text-decoration: underline;
+			}
+			.font{
+				padding-top: 20px;
+			}
+			.nav{
+				background: #F5F5F5;
+				height: 60px;
+				border-bottom: 1px solid darkgray;
+				margin-top: -20px;
+				text-align: center;
+			}
+			.nav-box{
+				
+				padding-top: 10px;
+			}
+			.nav span a {
+				color:#555555;
+				text-decoration: none;
+				margin-left: 5px;
+			}
+			.black:hover{
+				text-decoration: underline;
+			}
+			.red:hover{
+				text-decoration: underline;
+				color: red;
+			}
+			.cont .cont-boots{
+				text-align: center;
+				border-bottom: 1px solid darkgray;
+				/*width: 500px;
+				height: 80px;*/
+				margin: 0 auto;
+			}
+			.cont-boots h5{
+				font-weight: normal;
+				margin-top: -10px;
+			}
+			/*.cont-bgbox{
+				padding: 0 15%;
+				margin: 20px auto;
+			}*/
+			.cont-box{
+				width: 280px;
+				height: 370px;
+				border: 1px solid #A9A9A9;
+				padding: 4px;
+				text-align: center;
+				margin: 10px 10px;
+				float: left;
+			}
+			.cont-box img{
+				width: 280px;
+			}
+			.cont-box h3 a{
+				color: #337AB7;
+				margin: 0;
+				text-decoration: none;
+			}
+			.cont-box h3 a:hover{
+				color: #282829;
+			}
+			.cont-box h5 a{
+				color: #6d6d71;
+				margin-top: -10px;
+				text-decoration: none;
+			}
+			.cont-box  p{
+				text-align: center;
+				padding: 0 10px;
+				color: #3e3e42;
+			}
+			@media(min-width:1300px){
+				.cont-cont{
+					width: 1300px;
+					margin: 0 auto;
+					margin-top: 20px;
+					
+					
+				}
+				.cont-boots{
+					width: 1300px;
+					margin: 0 auto;
+				}
+				.cont-bgbox{
+					width: 1300px;
+					margin: 0 auto;
+					padding: 0px 3%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="font">
+					<h1>Bootstrap</h1>
+					<h4>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单</h4>
+					<h3><a href="#">Bootstrap3中文文档（v3.3.7）</a></h3>
+					<h5><a href="#">Bootstrap2中文文档（v2.3.2）</a></h5>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="nav-box">
+					<span>
+						<a href="#" class="black">Bootstrap问答社区</a>
+						|
+						<a href="#" class="red">新浪微博：@Bootstrap中文网</a>
+					</span>
+				</div>
+			</div>
+			<div class="cont">
+				<div class="cont-boots">
+					<h2>Bootstrap相关优质项目推荐</h2>
+					<h5>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</h5>
+				</div>
+				<div class="cont-bgbox">
+					<div class="cont-box">
+						<a href="#"><img src="img/codeguide.png"/></a>
+						<h3><a href="#">Bootstrap &nbsp;编码规范</a></h3>
+						<h5><a href="#">by&nbsp;@mdo</a></h5>
+						<p>Bootstrap编码规范：编写灵活、稳定、高质量的HTML和CSS代码的规范。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/yarn.png"/></a>
+						<h3><a href="#">Yarn</a></h3>
+						<h5><a href="#">中文手册</a></h5>
+						<p>Yarn是一个快速、可靠、安全的依赖管理工具。是NPM的替代品</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/bootcdn.png"/></a>
+						<h3><a href="#">BootCDN</a></h3>
+						<h5><a href="#">开放CDN服务</a></h5>
+						<p>Bootstrap中文网联合又拍云存储共同推出了开放CDN服务—BootCDN，我们对广泛
+						的前端开源库提供了稳定的存储和带宽的支持，例如Bootstrap、jQuery等。
+						</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/webpack.png"/></a>
+						<h3><a href="#">Webpack</a></h3>
+						<h5><a href="#">是前端资源模块化管理和打包工具</a></h5>
+						<p>Webpack是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖
+							和规则打包成符合生产环节部署的前端资源。
+						</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/jqueryapi.png"/></a>
+						<h3><a href="#">jQuery API</a></h3>
+						<h5><a href="#">中文手册</a></h5>
+						<p>根据最新的 jQuery 1.11.x 和 2.1.x 版本翻译的 jQuery API 中文文档/手册。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/w3schools.png"></a>
+						<h3><a href="#">w3schools</a></h3>
+						<h5><a href="#">原版国内镜像</a></h5>
+						<p>w3schools.com 是最受欢迎的前端技术教程网站，但是国内用户一直不能访问，并且国内的中文翻译版本十分
+							陈旧。因此做了个镜像，希望英文好的同学直接去看原版教程吧！</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/gulpjs.png"></a>
+						<h3><a href="#">gulp.js</a></h3>
+						<h5><a href="#">基于流的自动化构建工具</a></h5>
+						<p>gulp.js - 基于流(stream)的自动化构建工具。Grunt 采用配置文件的方式执行任
+							务，而 Gulp 一切都通过代码实现。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/liquid.png"></a>
+						<h3><a href="#">Liquid</a></h3>
+						<h5><a href="#">jekyll的模板语言</a></h5>
+						<p>Liquid - 最流行的模板语言。Jekyll、Github Pages 都在用。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/vuejs.png"></a>
+						<h3><a href="#">Vue.js</a></h3>
+						<h5><a href="#">中文文档</a></h5>
+						<p>Vue.js - 是一套构建用户界面的渐进式框架。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/lesscss.png"></a>
+						<h3><a href="#">LESS</a></h3>
+						<h5><a href="#">一种动态样式语言</a></h5>
+						<p>LESS为CSS赋予了动态语言的特性，如变量、继承、运算、函数。LESS既可以在客户端上运行
+							 (支持IE 6+、Webkit、Firefox)，也可以借助Node.js或者Rhino在服务端运行。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/lodash.png"></a>
+						<h3><a href="#">Lodash</a></h3>
+						<h5><a href="#">JavaScript</a></h5>
+						<p>Lodash 是一个具有一致接口、模块化、高性能等特性的 JavaScript 工具库。
+							比相同功能的 Underscore.js 使用更广泛。</p>
+					</div>
+					<div class="cont-box">
+						<a href="#"><img src="img/expo.png"></a>
+						<h3><a href="#">优站精选</a></h3>
+						<h5><a href="#">Bootstrap网站实例</a></h5>
+						<p>Bootstrap优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
