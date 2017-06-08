@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			img{
+				position: relative;
+				width: 100%;
+			}
+			#main{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -200px;
+				margin-top: -200px;
+				color: white;
+			}
+			#main h2{
+				font-size: 50px;
+				font-family: 华文行楷;
+				line-height: 70px;
+				text-align: center;
+				margin-bottom: 20px;
+				margin-left: 100px;
+			}
+			#main h4{
+				font-size: 20px;
+				margin-left: 100px;
+				line-height: 40px;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			
+			#main #list li{
+				float: left;
+				margin-left: 20px;
+				background: #12A4E8;
+				padding: 20px;
+				text-align: center;
+				border-radius: 10px;
+				margin-top: 20px;
+				width: 130px;
+				
+			}
+			#li{
+				position: absolute;
+				top: 140px;
+				left: 380px;
+			}
+			#box{
+				background: #12A4E8;
+				border-radius: 10px;
+				text-align: center;
+				width: 170px;
+				height: 90px;
+				position: absolute;
+				top: 140px;
+				left: 210px;
+				display: none;
+			}
+			#box h6{
+				padding: 10px;
+				font-size: 16px;
+			}
+			#box .line{
+				border-bottom: 1px solid white;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="pic" src="img/a1.jpg"/>
+		<div id="main">
+			<h2>你是中心</h2>
+			<h4>
+				不需要别人给予&nbsp;&nbsp;
+				你想要的触手可及
+			</h4>
+			<ul id="list">
+				<li>我是合作伙伴</li>
+				<li id="position">
+					我是商家用户
+				</li>
+				<li id="li">我是个人用户</li>
+			</ul>
+			<div id="box">
+				<h6 class="line">我是支付宝商家</h6>
+				<h6>我是口碑商家</h6>
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var arrImg=['img/a1.jpg','img/a2.jpg','img/a3.jpg'];
+		var num=0;
+		function change(){
+			if(num<arrImg.length-1){
+				num=num+1;
+			}else{
+				num=0;
+			}
+			$('pic').src=arrImg[num];
+		}
+		setInterval(change,3000);
+		
+		$('position').onmouseover=function(){
+			$('position').style.display='none';
+			$('box').style.display='block';
+		}
+		$('position').onmouseout=function(){
+			$('position').style.display='block';
+			$('box').style.display='none';
+		}
+	</script>
+</html>
