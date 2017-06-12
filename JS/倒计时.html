@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			button{
+				background: plum;
+				border: 1px solid plum;
+			}
+		</style>
+	</head>
+	<body>
+		<label>距离：</label>
+		<input type="text" id="newdate" value="Jun 15,2017 18:00:00" /><br />
+		<label>还剩：</label>
+		<input type="text" id="nowdate" value="" />
+		<button id="btn">开始倒计时吧</button>
+	</body>
+	<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		$('btn').onclick=function(){
+			setInterval(function(){
+				var newDate=new Date('Jun 15,2017 18:00:00');
+				var nowDate=new Date();
+//				var newDate=new Date($('newdate').value);
+//				var nowDate=new Date($('nowdate').value);
+				var t=(newDate-nowDate)/1000;
+		//		剩余的不满一分钟的秒: t%60
+		//		剩下的不满一小时的分:Math.floor(t%86400%3600/60)
+		//		剩下多少小时:Math.floor(t%86400/3600)
+		//		剩下多少天(24*60*60): Math.floor(t/86400);
+				var str=Math.floor(t/86400)+'天'+Math.floor(t%86400/3600)
+						+'时'+Math.floor(t%86400%3600/60)+'分'
+						+Math.floor(t%60)+'秒';
+					$('nowdate').value=str;
+				},1000)
+		}
+//		
+	</script>
+</html>
